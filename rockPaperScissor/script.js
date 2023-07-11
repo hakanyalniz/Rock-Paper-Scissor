@@ -24,33 +24,26 @@ function getPlayerChoice() {
 function whoWins(player, computer) {
   player = player.toLowerCase();
   computer = computer.toLowerCase();
-  if (player == "rock" && computer == "rock") {
-    // Rock
+  if (
+    (player == "rock" && computer == "rock") ||
+    (player == "paper" && computer == "paper") ||
+    (player == "scissor" && computer == "scissor")
+  ) {
     return "Draw!";
-  } else if (player == "rock" && computer == "paper") {
+  } else if (
+    (player == "rock" && computer == "paper") ||
+    (player == "scissor" && computer == "rock") ||
+    (player == "paper" && computer == "scissor")
+  ) {
     computerCounter++;
     return "Player looses!";
-  } else if (player == "rock" && computer == "scissor") {
+  } else if (
+    (player == "rock" && computer == "scissor") ||
+    (player == "paper" && computer == "rock") ||
+    (player == "scissor" && computer == "paper")
+  ) {
     playerCounter++;
     return "Player wins!";
-  } else if (player == "paper" && computer == "rock") {
-    // Paper
-    playerCounter++;
-    return "Player wins!";
-  } else if (player == "paper" && computer == "paper") {
-    return "Draw!";
-  } else if (player == "paper" && computer == "scissor") {
-    computerCounter++;
-    return "Player looses!";
-  } else if (player == "scissor" && computer == "rock") {
-    //Scissor
-    computerCounter++;
-    return "Player looses!";
-  } else if (player == "scissor" && computer == "paper") {
-    playerCounter++;
-    return "Player wins!";
-  } else if (player == "scissor" && computer == "scissor") {
-    return "Draw!";
   }
 }
 
