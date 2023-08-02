@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: gray;
+  margin: 0;
+  padding: 0;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 20vh;
+}
+
+.gameScreen {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  background-color: wheat;
+  height: 300px;
+  width: 600px;
+  border-radius: 10px;
+}
+
+.gameUI {
+  padding-top: 5vh;
+}
+
+.gameUI button {
+  font-weight: bold;
+  background-color: white;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 5px;
+}

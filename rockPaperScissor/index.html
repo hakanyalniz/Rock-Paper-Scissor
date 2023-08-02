@@ -5,16 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        body {
-            background-color: gray;
-        }
-    </style>
-    <script type="text/javascript" src="./script.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <div class="flex-container">
+        <div class="gameScreen">
+            <div class="computer">
+                <p>Computer</p>
+                <p id="computer-score">0</p>
+            </div>
+            <div class="player">
+                <p>Player</p>
+                <p id="player-score">0</p>
+            </div>
+        </div>
+    </div>
 
+
+    <div class="gameUI center">
+        <button type="button" id="rock">Rock</button>
+        <button type="button" id="paper">Paper</button>
+        <button type="button" id="scissor">Scissor</button>
+    </div>
+
+    <div class="results center">
+        <p id="final-results"></p>
+    </div>
+
+    <script type="text/javascript" src="./script.js"></script>
 </body>
 
 </html>
