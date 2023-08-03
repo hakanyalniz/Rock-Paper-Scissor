@@ -67,11 +67,13 @@ function changeScore(whoWon) {
   }
 
   // Computes and shows the last result
-  if (computerCounter == 5 || playerCounter == 5) {
+  if (computerCounter == 5) {
     console.log(
       `Final results: Computer: ${computerCounter} Player: ${playerCounter}`
     );
-    finalResults.innerHTML = `Final results: Computer: ${computerCounter} Player: ${playerCounter}`;
+    finalResults.innerHTML = `Computer Won`;
+  } else if (playerCounter == 5) {
+    finalResults.innerHTML = `Player Won`;
   }
 }
 

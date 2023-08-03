@@ -4,6 +4,7 @@
 
 body {
   background-color: gray;
+  font-family: "REM", sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -21,14 +22,27 @@ body {
 }
 
 .gameScreen {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-
   background-color: wheat;
-  height: 300px;
   width: 600px;
   border-radius: 10px;
+  height: 285px;
+
+  padding: 30px;
+}
+
+.players {
+  display: flex;
+  justify-content: space-between;
+  height: 150px;
+}
+
+.results {
+  text-align: center;
+}
+
+.gameScreen p {
+  font-size: 20px;
+  padding: 5px;
 }
 
 .gameUI {
