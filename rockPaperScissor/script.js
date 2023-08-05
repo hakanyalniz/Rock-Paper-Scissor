@@ -10,6 +10,7 @@ function getComputerChoice() {
   } else {
     computerChoice = "Error!";
   }
+  finalResults.innerHTML = `The computer picks: ${computerChoice}`;
   console.log("The computer picks: " + computerChoice);
   return computerChoice;
 }
